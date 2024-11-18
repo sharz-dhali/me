@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAZZIWA SHARIFAH - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main {
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .section p, .section ul {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section ul li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section ul li:hover {
+            background: #e4e4e4;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .comment-section {
+            margin: 20px 0;
+        }
+        .comment-section h2 {
+            color: #4CAF50;
+        }
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .comment-form input, .comment-form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .comment-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NAZZIWA SHARIFAH</h1>
+        <p>Developer & Computer Scientist</p>
+    </header>
+
+    <div class="container">
+        <section id="main" class="section">
+            <h2>About Me</h2>
+            <div class="image-container">
+                <img src="your-image-url.jpg" alt="NAZZIWA SHARIFAH">
+            </div>
+            <p>Hello! I'm NAZZIWA SHARIFAH, a passionate developer and computer scientist with a knack for solving complex problems and creating innovative solutions. I specialize in software development, data analysis, and artificial intelligence. I am always eager to learn and collaborate on exciting projects.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <h3>Frontend and Backend Developer - LANE SERVICES</h3>
+            <p><em>November 2024 - Present</em></p>
+            <p>As a Frontend and Backend Developer at LANE SERVICES, I am responsible for designing, developing, and maintaining both the client-side and server-side components of web applications. My role involves collaborating with cross-functional teams to deliver high-quality software solutions that meet client requirements and enhance user experience. Key accomplishments include:</p>
+            <ul>
+                <li>Developed and implemented responsive web interfaces using HTML, CSS, and JavaScript, ensuring seamless user experiences across various devices and browsers.</li>
+                <li>Designed and maintained robust backend systems using Python and Node.js, optimizing performance and scalability.</li>
+                <li>Integrated RESTful APIs and third-party services to enhance application functionality and streamline data exchange.</li>
+                <li>Collaborated with UX/UI designers to create intuitive and visually appealing user interfaces.</li>
+                <li>Conducted code reviews and implemented best practices to ensure code quality and maintainability.</li>
+                <li>Led the migration of legacy systems to modern frameworks, resulting in improved performance and reduced technical debt.</li>
+                <li>Mentored junior developers and provided technical guidance to support their professional growth.</li>
+            </ul>
+
+            <h3>Marketing Specialist - The Stationery Haven</h3>
+            <p><em>October 2024 - Present</em></p>
+            <p>As a Marketing Specialist at The Stationery Haven, I am responsible for developing and executing marketing strategies to promote our wide range of stationery products. My role involves creating engaging content, managing social media campaigns, and analyzing market trends to drive brand awareness and increase sales. Key accomplishments include:</p>
+            <ul>
+                <li>Successfully launched a social media campaign that increased brand engagement by 40% within the first three months.</li>
+                <li>Developed and implemented a content marketing strategy that boosted website traffic by 25% and improved SEO rankings.</li>
+                <li>Collaborated with the design team to create visually appealing marketing materials, including brochures, flyers, and email newsletters.</li>
+                <li>Conducted market research to identify customer needs and preferences, leading to the introduction of new product lines that increased sales by 15%.</li>
+                <li>Managed partnerships with influencers and bloggers to expand brand reach and drive product awareness.</li>
+                <li>Organized and executed successful promotional events and product launches, resulting in a significant increase in customer acquisition.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <h3>The Stationery Haven</h3>
+            <p>It brings your stationery experience to your doorstep.</p>
+
+            <h3>GPS Attendance App</h3>
+            <p>It allows employees at an organization or business to record their attendance using their gadgets. The GPS gives you permission as you are in that specific area of work.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <h3>Diploma - Uganda Institute of Information and Communications Technology</h3>
+            <p><em>Month Year - November 2024</em></p>
+            <p>Diploma in Computer Science.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java, C++</li>
+                <li>Data Analysis: R, SQL</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Artificial Intelligence and Machine Learning</li>
+            </ul>
+        </section>
+
+        <section id="comments" class="section comment-section">
+            <h2>Comments</h2>
+            <form class="comment-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Comment" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Nazziwa Sharifah</p>
+    </footer>
+</body>
+</html>
