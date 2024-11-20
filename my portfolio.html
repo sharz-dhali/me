@@ -75,24 +75,24 @@
             height: auto;
             border-radius: 10px;
         }
-        .comment-section {
+        .inquiry-section {
             margin: 20px 0;
         }
-        .comment-section h2 {
+        .inquiry-section h2 {
             color: #4CAF50;
         }
-        .comment-form {
+        .inquiry-form {
             display: flex;
             flex-direction: column;
         }
-        .comment-form input, .comment-form textarea {
+        .inquiry-form input, .inquiry-form textarea {
             margin: 5px 0;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1em;
         }
-        .comment-form button {
+        .inquiry-form button {
             padding: 10px;
             background-color: #4CAF50;
             color: white;
@@ -101,8 +101,18 @@
             font-size: 1em;
             cursor: pointer;
         }
-        .comment-form button:hover {
+        .inquiry-form button:hover {
             background-color: #45a049;
+        }
+        .social-media {
+            margin: 20px 0;
+        }
+        .social-media ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .social-media ul li {
+            margin: 5px 0;
         }
         footer {
             background: #333;
@@ -125,7 +135,7 @@
         <section id="main" class="section">
             <h2>About Me</h2>
             <div class="image-container">
-                <img src="your-image-url.jpg" alt="NAZZIWA SHARIFAH">
+                <img src="mypic.jpg" alt="NAZZIWA SHARIFAH">
             </div>
             <p>Hello! I'm NAZZIWA SHARIFAH, a passionate developer and computer scientist with a knack for solving complex problems and creating innovative solutions. I specialize in software development, data analysis, and artificial intelligence. I am always eager to learn and collaborate on exciting projects.</p>
         </section>
@@ -184,19 +194,45 @@
             </ul>
         </section>
 
-        <section id="comments" class="section comment-section">
-            <h2>Comments</h2>
-            <form class="comment-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Comment" rows="5" required></textarea>
+        <section id="social-media" class="section social-media">
+            <h2>Contact & Social Media</h2>
+            <ul>
+                <li>Phone: +256 764354976</li>
+                <li>Gmail: nazziwa06@gmail.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">https://www.linkedin.com/in/yourprofile</a></li>
+                <li>GitHub: <a href="https://github.com/sharz-dhali">https://github.com/sharz-dhali</a></li>
+                <li>Twitter: <a href="https://twitter.com/sharz">@sharz</a></li>
+            </ul>
+        </section>
+        <section id="inquiries" class="section inquiry-section">
+            <h2>FOR HIRING</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="55e874ca-400c-410e-9a5d-276648cf0220">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number"><br><br>
+                
+                
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region" required><br><br>
+                
+                <h2>Comments</h2>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" placeholder="Your Comment" rows="5" required></textarea><br><br>
+                
                 <button type="submit">Submit</button>
             </form>
         </section>
-    </div>
-
-    <footer>
+        
+           
+        
+    
         <p>© 2024 Nazziwa Sharifah</p>
-    </footer>
 </body>
 </html>
