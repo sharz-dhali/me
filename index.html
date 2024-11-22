@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Development Centre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .section p {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .fade-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            background: url('toy.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
+        }
+        .fade-image.fade-out {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            const fadeImage = document.querySelector('.fade-image');
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 150) {
+                fadeImage.classList.add('fade-out');
+            } else {
+                fadeImage.classList.remove('fade-out');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="fade-image"></div>
+        <h1>Child Development Centre</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#blog">Blog</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to the Child Development Centre! We are dedicated to supporting the livelihood and development of children through various programs and services. Our mission is to provide a safe and nurturing environment where children can grow, learn, and thrive.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p>We offer a range of services to support children's development, including:</p>
+            <ul>
+                <li>Educational Programs</li>
+                <li>Health and Nutrition</li>
+                <li>Recreational Activities</li>
+                <li>Counseling and Support</li>
+                <li>Community Outreach</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section gallery">
+            <h2>Gallery</h2>
+            <img src="toy.jpg" alt="Children playing">
+            <img src="teen.jpg" alt="Educational activities">
+            <img src="pipo.jpg" alt="Community outreach">
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="your-access-key">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number"><br><br>
+                
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region" required><br><br>
+                
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" placeholder="Your Comment" rows="5" required></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Child Development Centre</p>
+    </footer>
+</body>
+</html>
